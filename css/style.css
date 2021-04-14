@@ -1,0 +1,795 @@
+﻿/*styling the html doc and body section*/
+html, body{
+	/* This is reset style. This ensures that our landing scren takes the full height and width*/
+	height: 90%;
+	width: 100%;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Nunito', 'sans-serif';
+}
+
+
+.menu-bar{
+	background-image: linear-gradient(-90deg, #740027, #C00040);
+
+}
+
+.nav-link{
+	font-size: 16px;
+	margin: 3px;
+	color: #fff!important;
+	font-weight: 500;
+
+}
+.side-nav-link{
+	font-size: 16px;
+	margin: 3px;
+	color: black!important;
+	font-weight: 500;
+}
+
+.navbar-nav{
+	text-align: right;
+	margin-right: 20px;
+}
+
+.menu-bar .navbar-toggler{
+	padding-right: 20px;
+	outline: none!important;
+	border: none!important;
+}
+
+.navbar .fa{
+	color: white;
+	font-size: 26px;
+}
+
+.nav-link:hover	{
+	font-weight: 600;
+	border-bottom: 1px solid white;
+
+
+}
+
+.navbar-brand img{
+	 margin-top: 5px;
+	 margin-left: 20px;
+}
+
+
+/*LANDING PAGE*/
+#home{
+	background-image: url(../images/landingcat.jpg); /*no-repeat center center fixed;*/
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+.landing-text{
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.landing-text h1{
+	font-size: 500%;
+	font-weight: bold;	
+
+}
+
+.landing-text h1,h3,a{
+	margin-left: 30px;
+	text-align: left;
+
+}
+.landing-text h1,h3,a{
+	color: white;
+
+}
+
+.landing-text a{
+	background-color: #C00040;
+	border: none;
+	color: white;
+
+}
+
+.padding {
+	padding: 80px 0; /* 80 = top & Bottom  0 = left and right*/
+}
+.padding img{
+	width: 100%; To keep the image contained to the width of the column
+}
+
+/*Fixed image scrolling effect*/
+#fixed{
+	background-image: url(images/background.jpg);
+	display: table;
+	height: 60%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+
+}
+
+footer{
+	margin-top: 0px;
+	width: 100%;
+	 background-image: linear-gradient(-90deg, #740027, #C00040);
+
+	/*background-color: #737373!important;*/
+	padding: 20px;
+	color: white;
+}
+.footer-class hr{
+	  height:1px;
+	  border:none; 
+	  background-color:white;
+	  margin-left: 25%;
+	  margin-right: 25%;
+
+}
+
+.col-sm-4 h3,h5{
+	text-align: center;
+}
+
+.fa{
+	padding: 0px;
+	font-size: 20px;
+	color: white;
+}
+
+
+.fab{
+	font-size: 16px;
+}
+
+.fab:hover{
+	color: black;
+	text-decoration: none;
+}
+
+.icon{
+	max-width: 200px;
+}
+
+.footer-class p{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	color: #A6A6A6;
+}
+
+/***********************************************************************************************/
+
+/*MEDIA QUERIES*/
+
+
+@media (max-width: 768px){
+	.landing-text h1{
+		font-size: 300%;
+
+	}
+	.fa{
+		font-size: 20px;
+		margin-left: 0px;
+		padding: 10px;
+	}
+	.icon{
+		padding-top: 5%;
+		max-width: 100px 
+	}
+	.nav-link:hover{
+		border-bottom: none!important;
+	}
+
+	.landing-text h1{
+		margin-left: 0px;
+		text-align: center;
+		font-size: 36px;
+		font-weight: bold;
+		color: #740027;
+		opacity: 0;
+		text-shadow: 10px solid black;
+	}
+	.landing-text h3{
+		margin-left: 0px;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 800px;
+	}
+	.navbar-brand img{
+	 margin-top: 5px;
+	 margin-left: 0px;
+	 text-align: left;
+	 width: 120px;
+
+	}
+
+	#home{
+		background-image: url(../images/landingCatPhone.jpg); /*no-repeat center center fixed;*/
+		display: table;
+		height: 50%;
+		position: relative;
+		width: 100%;
+		background-size: cover;
+	}
+	
+	.landing-text a{
+		background-color: #C00040;
+		border: none;
+		color: white;
+		font-size: 12px;
+		margin-left: 25%;
+		text-align: center;
+		align-items: center;
+	}
+	.btn-lg{
+		padding: 5px;
+	}
+
+	.contact h5, h3{
+		margin-left: 0px;
+		text-align: center;
+
+	}
+	/*.contact h3{
+		border-bottom: 1px solid white;
+
+	}*/
+
+	.contact h5{
+		font-size: 16px;
+
+	}
+	.fostercare h1{
+	font-size: 12px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-top: 0px;
+	text-align: center;
+	}
+
+	.fostercare button{
+	margin-left: 50%;
+	font-size: 8px;
+	padding: 5px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10px;
+	text-decoration: none;
+
+	}
+
+	.fostercare a:hover{
+	text-decoration: none;
+
+	}
+
+	.petpageimage{
+		width: 100%;
+	}
+
+}
+
+
+/**************************************************************************************************/
+
+.container-class{
+	margin-bottom: 20px;
+}
+
+.card-class{
+	margin-bottom: 15px;
+}
+
+/**{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Ubuntu', sans-serif;
+}*/
+
+#facilities{
+  /*background-color: #dbe5e6;*/
+  padding: 30px 10px; /* 30px is for the top and botton margin, while 0px is for the
+  left and right paddings*/
+}
+
+#facilities h1{
+  font-weight: bold;
+  font-size: 34px;
+  padding-bottom: 5px;
+}
+
+.title{
+  text-align: center;
+  padding: 0px 0px;
+  margin: 20px;
+
+}
+
+.title p{
+  font-size: 18px;
+
+}
+
+
+.card-body{
+  /*background-image: url(../images/image4.jpg);
+  background-size: cover;*/
+  /*background-color: #FCE3EE;*/
+  background-image: linear-gradient(-90deg, #740027, #C00040);
+}
+.card-body label{
+	color: white;
+
+}
+.card-body a{
+	text-align: center;
+}
+
+
+}
+.card{
+  margin: 40px 10px;
+}
+
+/*.card-text{
+	font-size: 32px;
+}*/
+
+
+
+.card-body p{
+  color: white;
+  text-decoration: none;
+  font-size: 12px!important;
+/*  justify-content: center;
+*/  text-align: left;
+  /*margin-top: auto;*/
+  font-weight: 600;
+  font-family: 'Nunito', 'sans-serif';
+
+
+}
+.card-body h5{
+  /*color: #0c7f90;*/
+  text-decoration: none;
+  font-size: 18px;
+  /*margin-top: auto;*/
+  font-weight: 600;
+
+}
+
+.location{
+  font-size: 12px;
+  color: #BEBEBE;
+  float: right;
+}
+
+.card-title{
+  color: white;
+}
+
+
+
+.card-body button{
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  /*text-align: center;*/
+
+}
+
+.card-body button:hover{
+	background-image: linear-gradient(-90deg, #740027, #C00040);
+
+	  /*background-color: white;*/
+	  color: white;
+	  border-radius: 3px;
+	  border: 1px solid white;
+	  font-size: 12px;
+	  font-weight: bold;
+	  text-align: center;
+
+}
+
+.card-body a:hover{
+	text-decoration: none;
+}
+
+
+/**************************************************************************************/
+
+
+.card-signup{
+	border-radius: 10px;
+	padding: 20px;
+	margin: 20px;
+  	box-shadow: 0.5px grey;
+}
+
+/*
+
+.signin-form{
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+
+}
+
+
+.signup-card-body hr{
+		height:1px;
+	 	border:none; 
+	 	background-color:white;
+	  	margin-left: 25%;
+	  	margin-right: 25%;
+}
+*/
+
+.signup-form{
+	margin-top: 25px; 
+	margin-bottom: 25px;
+	/*box-shadow: 1px black;*/
+
+}
+
+.signup-card-title{
+	color: black!important;
+	font-weight: bold;
+}
+
+.regbutton{
+	background-color: #C00040;
+	color: white;
+
+}
+.signuplabel a:hover{
+	color: black!important;
+}
+
+.signuplabel a{
+	color: #990033;
+	margin-left: 2px;
+}
+.signuplabel{
+	margin-top: 0px;
+}
+
+.btn-dark{
+	border: none;
+	font-weight: bold;
+}
+
+
+/**************************************************************************************/
+.fostercare{
+	background-color: black;
+	color: white;
+	font-weight: 1600;
+	padding: 50px;
+	text-align: center
+	}
+
+.fostercare button{
+	background-color: #C00040;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	margin-top: 10px;
+	font-weight: 600;
+}
+.fostercare button:hover{
+	background-color: white!important;
+	color: black;
+	font-weight: bold;
+}
+	
+/**************************************************************************************/
+.signup-card-body P{
+	text-align: center;
+}
+
+.forgot-password p{
+	text-align: left;
+}
+
+
+
+/**************************************************************************************/
+/*PET PAGE*/
+/*.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}*/
+
+.petpagecontainer{
+	background-color: #FFF2F6; 
+	margin-top: 10px; 
+	margin-bottom: 10px;
+}
+.petpageimage{
+	color: black;
+}
+.petpageimage h4{
+	text-align: center;
+	font-weight: 600; 
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+
+
+.petviewcard h5{
+	font-size: 14px; 
+		text-align: left;
+	font-weight: bold;
+}
+.petviewcardspan{
+	font-weight: 400
+}
+.fas{
+	color: black;
+}
+
+.spanstyle{
+	font-size: 14px; 
+	font-weight: 400;
+}
+
+.petviewcard2 h5{
+	text-align: left;
+	font-size: 14px;
+}
+
+/********************************************************************************/
+/*   ADMIN PANEL */
+
+/*.table-class{
+	background-color: #C00040;
+	background-image: linear-gradient(-90deg, #C00040, #740027);
+
+}
+*/
+
+.dashboard{
+	background-color: #C00040;
+	border-radius: 5px;
+}
+
+.dashboarddisplay{
+	background-color: #FFF2F6;
+}
+
+.dashboardheader{
+	background-color: #ed004f; 
+	color: white; 
+	margin-top: 10px; 
+	font-weight: 600; 
+	text-align: center;
+	padding-top: 5px;
+}
+
+
+.dashboardcontent{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: auto;
+}
+
+
+.navdiv{
+	background-color: black;
+	/*background-color: white;*/
+	box-shadow: #f7f7f7!important;
+	color: black;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+.navdivbuttons{
+	box-shadow: none;
+	border-radius: 5px;
+	border: none;
+	background-color: white;
+	color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.flex-column{
+	color: black;
+}
+
+.fad{
+	color: black!important;
+}
+
+.nav-item a:hover{
+	color: black;
+
+}
+/*******************************************************************************/
+
+/*******************************************************************************/
+/*NAV BAR IMAGE*/
+
+/*******************************************************************************/
+
+.wrapper{
+      display: flex;
+    }
+
+    .sidebar{
+      flex: 2;
+      height: 575px;
+      background-color: black!important;
+      /*overflow: auto;*/
+      
+    }
+    .main-content{
+      flex: 10;
+      height: 550px;
+      /*background-color: cyan;*/
+      overflow: auto;
+
+    }
+   
+
+    .sidebar h2{
+    	color: white;
+    	font-size: 12px;
+    	font-weight: 800;
+    	text-align: center;
+    	margin-top: 10px;
+    }
+
+    .sidebar hr{
+		height:1px;
+	  border:none; 
+	  background-color:white;
+	  margin-left: 25%;
+	  margin-right: 25%;
+	  margin-bottom: 30px;
+
+    }
+
+    .sidebar a{
+    background-color: black;
+      color: white;
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+    }
+
+    .sidebar a:hover{
+      color: white;
+      padding: 5px;
+   	  font-weight: 800px;
+   	  margin-left: 0px;
+   	  transition: 0.1s;
+   	  text-decoration: none;
+	background-color: #C00040;
+	margin-top: 5px;
+	margin-bottom: 5px;
+    }
+
+
+    
+   .dashboard-header{
+	background-image: url(../images/dashboard/analytic.png); /*no-repeat center center fixed;*/
+	display: table;
+	height: 180px;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+
+/*.dashboard-header h1 img{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	font-weight: 800px;
+}*/
+
+.dashboard-header-heading{
+	text-align: center; 
+	color: white; 
+	display: table-cell; 
+	text-align: center;   
+	vertical-align: middle; 
+	font-weight: 800px;
+}
+
+.dashboard-heading{
+	text-align: center; 
+	color: black; 
+	display: table-cell; 
+	text-align: center;   
+	vertical-align: middle; 
+	font-weight: 800px;
+}
+
+
+
+
+.analytics-row{
+	margin: -2px;
+	margin-top: 10px;
+}
+
+.dashboard-footer{
+	text-align: center;
+	/*margin-top: 20px;
+	color: #979797;*/
+	margin-top: 50px; 
+	color: #464646!important;"
+}
+/*..dashboard-footer a{
+	margin-top: 50px;
+	color: black!important; 
+}*/
+
+.stats{
+		background-image: linear-gradient(-90deg, #740027, #C00040);
+
+	/*background-color: #C00040;*/
+	height: 230px;
+	width: 25%;
+	border-radius: 20px;
+	margin: 1px;
+	margin-top: 20px;
+	box-shadow: 1px solid black;
+}
+
+.stats:hover{
+	background-image: linear-gradient(-90deg, #C00040, #740027);
+
+}
+
+.stats-row{
+	margin-top: 10px;
+}
+
+
+.stats-col{
+	padding-top: 10px;
+	text-align: center;
+	margin-left: 0px;
+}
+
+.stats h1{
+	font-size: 90px; 
+	text-align: center; 
+	color: white; 
+	font-weight: 800; 
+	padding: 10px;"
+
+}
+
+
+.pet-description{
+	color: white!important;
+}
+
+
+    /***********************************************************************************************/
+
+    /***********************************************************************************************/
+    
+
